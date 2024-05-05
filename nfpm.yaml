@@ -1,0 +1,17 @@
+name: "beancount-ch"
+arch: "amd64"
+platform: "linux"
+version: "${CARGO_MAKE_PROJECT_VERSION}"
+release: "${RELEASE}"
+section: "default"
+priority: "extra"
+provides:
+  - beancount-ch
+description: "Parses a monthly statement and output it as Beancount entries"
+vendor: "cpg314"
+maintainer: "cpg314 <44120267+cpg314@users.noreply.github.com>"
+homepage: "https://github.com/cpg314/beancount-ch"
+contents:
+  - src: "./target-cross/$ARCH/release/beancount-ch"
+    dst: /usr/local/bin/beancount-ch
+    expand: true

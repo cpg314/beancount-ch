@@ -1,6 +1,6 @@
 [package]
-name = "cembra-beancount"
-version = "0.1.0"
+name = "beancount-ch"
+version = "0.1.1"
 edition = "2021"
 license-file = "LICENSE"
 
@@ -8,7 +8,9 @@ license-file = "LICENSE"
 anyhow = "1.0"
 minidom = "0.15"
 xmltree = "0.10"
-chrono = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
 itertools = "0.11"
 duct = "0.13.6"
 clap = { version = "3.2.12", features = ["derive"] }
+csv = "1.3.0"
+serde = { version = "1.0.197", features = ["derive"] }
